@@ -8,20 +8,20 @@ class SistemaCadastro:
         self.master = master
         self.master.title("Sistema de Cadastro")
         self.master.geometry("600x500")
-        self.master.configure(bg="#f0f0f0")
+        self.master.configure(bg="#E6E6FA")
 
         # TÍTULO
         self.titulo = Label(
             master,
             text="Cadastro de Alunos",
             font=("Arial", 20, "bold"),
-            bg="#f0f0f0",
-            fg="#333"
+            bg="#E6E6FA",
+            fg="#8B008B"
         )
         self.titulo.pack(pady=20)
 
         # FRAME FORMULÁRIO
-        self.frame_form = Frame(master, bg="#ffffff", bd=2,
+        self.frame_form = Frame(master, bg="#F0F8FF", bd=2,
 relief="solid")
         self.frame_form.pack(pady=10, padx=20, fill="x")
 
@@ -30,7 +30,7 @@ relief="solid")
             self.frame_form,
             text="Nome:",
             font=("Arial", 12),
-            bg="#ffffff"
+            bg="#F0F8FF"
         )
         self.lbl_nome.grid(row=0, column=0, padx=10, pady=10)
 
@@ -46,7 +46,7 @@ relief="solid")
             self.frame_form,
             text="Idade:",
             font=("Arial", 12),
-            bg="#ffffff"
+            bg="#F0F8FF"
         )
         self.lbl_idade.grid(row=1, column=0, padx=10, pady=10)
 
@@ -62,7 +62,7 @@ relief="solid")
             self.frame_form,
             text="Curso:",
             font=("Arial", 12),
-            bg="#ffffff"
+            bg="#F0F8FF"
         )
         self.lbl_curso.grid(row=2, column=0, padx=10, pady=10)
 
@@ -74,7 +74,7 @@ relief="solid")
         self.entry_curso.grid(row=2, column=1)
 
         # BOTÕES
-        self.frame_botoes = Frame(master, bg="#f0f0f0")
+        self.frame_botoes = Frame(master, bg="#E6E6FA")
         self.frame_botoes.pack(pady=15)
 
         self.btn_cadastrar = Button(
@@ -104,7 +104,8 @@ relief="solid")
             master,
             font=("Arial", 11),
             width=70,
-            height=10
+            height=10,
+            bg="#F0F8FF",
         )
         self.lista.pack(pady=20)
 
